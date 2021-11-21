@@ -1,0 +1,23 @@
+﻿@page
+@model WebApplication2.Pages.Shared.TodoModel
+@{
+}
+
+<head>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/todo.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/css/todo.css" />
+</head>
+
+
+<main>
+  <div class="container">
+    <h1 class="app-title">todos</h1>
+    <ul class="todo-list js-todo-list"></ul>
+
+    <form class="js-form">
+      <input autofocus type="text" aria-label="Enter a new todo item" placeholder="E.g. Build a web app" class="js-todo-input">
+    </form>
+  </div>
+</main>

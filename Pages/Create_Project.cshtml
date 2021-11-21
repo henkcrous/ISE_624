@@ -1,0 +1,42 @@
+﻿@page
+@model WebApplication2.Pages.Create_ProjectModel
+@{
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication2</title>
+    <script src="~/js/create.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/create.js"></script>
+    <script src="~/js/Validation.js"></script>
+    <script src="~/js/delete.js"></script>
+    <link rel="stylesheet" href="~/css/create.css" />
+</head>
+
+<div class="form">
+    <form name="myForm" method="post">
+        <label>Student Number: </label>
+        <input type="text" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;" name="students" /><br><br>
+
+
+        <label>Insert Task </label>
+        <input type="text" id="task" autofocus/>
+        <p>
+            <input class="btn btn-primary" type="button" id="bt" value="Add Task" onclick="createChk(task)" /> 
+        </p>
+
+        <p id="container"></p>
+
+        <p> <input class="btn btn-primary" type="button" id="delete" name="delete" value="Delete Tasks" /></p>
+
+        <label>Project Template: </label>
+        <input type="file" /><br><br>
+        <input class="btn btn-primary" type="submit" value="Submit" onclick="ValidateStudent(students)"><br><br>
+
+        
+
+    </form>
+    <br>
+    <br>
+</div>

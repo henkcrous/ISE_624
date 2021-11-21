@@ -1,0 +1,22 @@
+﻿body {
+}
+
+
+#progressbar{
+    color:black;
+    background-color:black;
+}
+#percentage{
+    color:black;
+    background-color:black;
+}
+
+.hidden {
+    visibility: hidden;
+
+}
+
+.error {
+    color: red !important;
+    font-weight: bold !important;
+}
